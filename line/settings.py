@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'localhost', # 追加
     '127.0.0.1', # 追加
     'herokuapp.com', # 追加
+    'line0013-501003cf1db4.herokuapp.com', # 追加
 ]
 
 
