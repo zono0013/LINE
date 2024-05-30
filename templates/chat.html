@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="{% static 'chat.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="left-panel">
+            <h1>Let's chat!</h1>
+            <h2>ユーザー: {{ request.user.username }}</h2>
+            <input type="hidden" id="username" value="{{ request.user.username }}">
+            <div class="room-input">
+                <label for="room-name">Room Name:</label>
+                <input type="text" id="room-name" placeholder="Enter room name">
+                <button id="join-room">Join Room</button>
+            </div>
+            <div id="rooms" class="room-list"></div>
+        </div>
+        <div id="talkroom" class="right-panel">
+            <form id="form" class="message-form">
+                <input type="text" name="message" placeholder="Enter message">
+            </form>
+        </div>
+    </div>
+
+    <script src="{% static 'chat.js' %}"></script>
+</body>
+</html>

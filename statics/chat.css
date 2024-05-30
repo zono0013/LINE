@@ -1,0 +1,53 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+}
+
+.chat-container {
+    display: contents;
+}
+
+.left-panel, .right-panel {
+    background-color: antiquewhite;
+    width: calc(50vw - 1px);
+}
+
+.room-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.room-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.room-list div {
+    background-color: aquamarine;
+    padding: 3%;
+}
+
+.messages {
+    padding: 8px;
+    overflow-y: auto;
+    height: calc(100vh - 40px - 3rem); /* Adjust height to fit within the container */
+}
+
+.message-form {
+    position: absolute;
+    bottom: 0;
+    width: calc(50vw - 1px - 2%);
+    margin: 1%;
+}
+
+.message-form input {
+    width: 90%;
+    padding: 8px;
+}
