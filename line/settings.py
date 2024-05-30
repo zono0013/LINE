@@ -144,7 +144,7 @@ STATIC_URL = 'static/'
 # 追加----------------------------------------------
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
-    BASE_DIR / 'statics',
+    BASE_DIR / 'static',
 ]
 # --------------------------------------------------
 
