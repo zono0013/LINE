@@ -153,3 +153,8 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# 追加----------------------------------------------
+CSRF_TRUSTED_ORIGINS = [
+    'https://line0013-501003cf1db4.herokuapp.com',
+]
+
