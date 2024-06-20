@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+#login_form{
+    grid-area: 4/4/9/9;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: burlywood;
+    border: solid 1px #333333;
+}
+
+#new_login{
+    display: grid;
+    grid-area: 9/4/10/9;
+    align-items: start;
+    justify-items: end;
+}

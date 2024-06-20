@@ -18,7 +18,13 @@
                 <input type="text" id="room-name" placeholder="Enter room name">
                 <button id="join-room">Join Room</button>
             </div>
-            <div id="rooms" class="room-list"></div>
+            <div id="rooms" class="room-list">
+                
+            </div>
+            <form action="{% url 'chat:logout' %}" method="post">
+                {% csrf_token %}
+                <button type="submit">ログアウト</button>
+            </form>
         </div>
         <div id="talkroom" class="right-panel">
             <form id="form" class="message-form">

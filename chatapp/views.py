@@ -19,6 +19,7 @@ chat   = ChatView.as_view()
 
 # ログイン画面を表示するビュー
 class LoginView(View):
+        
         def get(self,request,*args,**kwargs):
             return render(request,"login.html")
     

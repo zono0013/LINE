@@ -55,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', # 追加
+    'chatapp.middleware.RedirectIfAuthenticatedMiddleware', # 追加
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage' # 追加
@@ -76,6 +77,8 @@ TEMPLATES = [
         },
     },
 ]
+
+LOGOUT_REDIRECT_URL = '/' # 追加
 
 WSGI_APPLICATION = 'line.wsgi.application'
 
